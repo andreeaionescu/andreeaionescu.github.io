@@ -1,10 +1,10 @@
 {
-  "name": "Jekyll-Gulp-Sass-Autoprefixer-Imagemin-BrowserSync",
+  "name": "Andreea Ionescu Personal Blog",
   "version": "1.0.0",
-  "description": "A starter project for Jekyll",
+  "description": "Personal Blog on Technology Topics",
   "main": "index.js",
-  "repository": "https://github.com/artemsheludko/Jekyll-Gulp-Sass-Autoprefixer-Imagemin-BrowserSync",
-  "author": "Artem Sheludko",
+  "repository": "https://github.com/andreeaionescu/andreeaionescu.github.io.git",
+  "author": "Andreea Ionescu",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.18.13",
