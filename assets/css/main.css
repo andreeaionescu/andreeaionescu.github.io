@@ -933,7 +933,7 @@ table tfoot td {
   width: 240px;
   height: 100%;
   padding: 20px 10px;
-  background-color: #ffffff;
+  background-color: #263959;
 }
 
 .about {
@@ -975,7 +975,7 @@ table tfoot td {
   padding-bottom: 15px;
   font-size: 16px;
   text-transform: uppercase;
-  color: #333030;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -1408,7 +1408,7 @@ a.newer-posts:hover {
             justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #263959;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   }
@@ -1514,7 +1514,7 @@ a.newer-posts:hover {
 }
 .bar::before{
   content:  attr(data-skill);
-  background-color: #41afff;
+  background-color: #333030;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -1525,10 +1525,10 @@ a.newer-posts:hover {
 }
 
 .bar.front::before{
-  background-color: #41afff;
+  background-color: #333030;
 }
 .bar.back::before{
-  background-color: #41afff;
+  background-color: #333030;
 }
 
 .bar.learning::before{
@@ -1545,9 +1545,4 @@ a.newer-posts:hover {
 }
 .bar.expert::before{
   width: calc(100% - 10px);
-}
-
-#skills{
-  color: white;
-  background: #2c3e50;
 }
