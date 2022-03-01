@@ -930,10 +930,10 @@ table tfoot td {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 240px;
+  width: 285px;
   height: 100%;
   padding: 20px 10px;
-  background-color: #263959;
+  background-color: #1e1e1f;
 }
 
 .about {
@@ -1003,7 +1003,7 @@ table tfoot td {
 
 .content-box {
   padding: 20px;
-  padding-left: 260px;
+  padding-left: 330px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1024,7 +1024,7 @@ table tfoot td {
 
 .contact .contact-title {
   position: relative;
-  color: #333030;
+  color: #eeeeee;
   font-weight: 400;
   font-size: 12px;
   margin: 0 0 5px;
@@ -1099,6 +1099,7 @@ footer .copyright {
   font-size: 14px;
   text-align: center;
   margin: 0;
+  color:#eeeeee;
 }
 
 .post {
@@ -1409,7 +1410,7 @@ a.newer-posts:hover {
             justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #263959;
+    background-color: #1e1e1f;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   }
@@ -1515,7 +1516,7 @@ a.newer-posts:hover {
 }
 .bar::before{
   content:  attr(data-skill);
-  background-color: #333030;
+  background-color: #479eb1;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -1526,10 +1527,10 @@ a.newer-posts:hover {
 }
 
 .bar.front::before{
-  background-color: #333030;
+  background-color: #479eb1;
 }
 .bar.back::before{
-  background-color: #333030;
+  background-color: #479eb1;
 }
 
 .bar.learning::before{
