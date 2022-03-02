@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How GraphQL works with Tornado/Flask
+title: GraphQL Works With Python Too, Here is How
 date: 2021-11-03 00:00:00 +0300
-description: Exploring the integration of GraphQL/Graphene on the back-end as well as showing two working examples . # Add post description (optional)
-img: graphql-with-python.jpg # Add image post (optional)
+description: Exploring the integration of GraphQL/Graphene on the back-end as well as showing two working examples with Tornado and Flask. # Add post description (optional)
+img: graphql-with-pyton.jpg # Add image post (optional)
 tags: [Python, Software] # add tag
 ---
 

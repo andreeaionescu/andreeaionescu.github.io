@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Amplify Serverless with React
+title: AWS Amplify Serverless With React
 date: 2019-09-23 00:00:00 +0300
 description: Basic authenticator example using AWS Amplify tools and React. # Add post description (optional)
 img: aws-amplify.png # Add image post (optional)

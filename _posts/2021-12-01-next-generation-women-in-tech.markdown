@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Building The Next Generation of Women in Technology
+title: Volunteering - Building The Next Generation of Software Engineers
 date: 2021-12-01 00:00:00 +0000
 description: Why volunteering matters and how it changed me as a person. # Add post description (optional)
-img: volunteerinf.jpg # Add image post (optional)
+img: volunteering.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Volunteering, WomenInTechnology, Leadership]
 ---
