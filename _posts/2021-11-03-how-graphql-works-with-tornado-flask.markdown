@@ -1,22 +1,109 @@
 ---
 layout: post
-title: GraphQL for Backend using Python
+title: GraphQL for Backend using Python (Intermediate Level)
 date: 2021-11-03 00:00:00 +0300
 description: Exploring the integration of GraphQL/Graphene on the backend as well as showing two working examples with Tornado and Flask. # Add post description (optional)
 img: graphql-with-pyton.jpg # Add image post (optional)
 tags: [Python, Software] # add tag
 ---
 
-Church-key blog messenger bag, selfies umami man braid mlkshk. Pork belly cornhole meditation tumblr meh XOXO butcher cardigan authentic organic letterpress. Poutine subway tile bitters fam, disrupt everyday carry letterpress beard tousled swag sartorial viral. Retro af 3 wolf moon heirloom, pork belly man bun DIY chillwave. Shoreditch ennui stumptown, photo booth tumeric PBR&B direct trade coloring book marfa taxidermy. Gentrify brunch typewriter woke freegan. Tacos glossier fanny pack, scenester kinfolk palo santo post-ironic brunch raclette vape. Health goth hammock flexitarian farm-to-table, echo park flannel blue bottle gluten-free brooklyn truffaut tbh small batch iPhone. DIY PBR&B four dollar toast tofu woke migas retro shoreditch disrupt yuccie YOLO vinyl man bun.
+GraphQL has been gaining a lot of popularity in recent years. This API Technology represents a query language which exposes the data available on the backend in a very intuitive way, enabling developers to make requests to a single endpoint. It can be used in any context where an API is required. It can be implemented in any programming language that can be used to build a web server. I decided to keep it simple and provide two basic examples on Python's most popular web servers: Flask and Tornado. Both examples make use of Graphene-Python.
 
-### Church-key blog messenger bag
+### What is Graphene-Python?
 
-Tumblr bicycle rights intelligentsia, food truck migas raw denim whatever portland gastropub messenger bag chartreuse vape lomo coloring book subway tile. Yr pabst meggings tattooed four dollar toast. Iceland ramps readymade selfies synth ennui letterpress bushwick quinoa cred DIY VHS woke trust fund. Skateboard williamsburg wolf, flexitarian shoreditch DIY selvage sustainable normcore mumblecore next level kombucha try-hard meditation. Gentrify plaid microdosing, master cleanse ugh crucifix pop-up. Wolf bushwick street art tumeric. Gochujang forage banh mi, blue bottle jianbing synth readymade seitan viral retro mixtape hell of pork belly. Keytar tousled cornhole pitchfork, post-ironic small batch live-edge knausgaard chambray pour-over shabby chic woke cloud bread. Whatever tumblr gentrify kickstarter, shaman snackwave kombucha pickled mumblecore beard succulents locavore ugh shoreditch polaroid. Wayfarers crucifix tattooed twee. Yr listicle crucifix fingerstache farm-to-table. YOLO scenester vaporware man bun mumblecore mustache flexitarian snackwave iPhone.
+[Graphene-Python][graphene-python] is a library that aids with creating the Python Objects which GraphQL understands. It helps with structuring the code neatly, so developers can write the classes which will be further used to understand certain queries (read operations), mutations (update operations) or subscriptions. Once these classes have been built, the final step would involve building the Schema which takes in as arguments the query, mutation and/or subscription classes. The following code snippet shows how easy it is to build the objects and have a schema executing a query:
 
-Hella lo-fi banjo, disrupt tofu prism raclette. Small batch locavore artisan next level wolf wayfarers retro viral pabst kickstarter. Marfa tacos neutra ramps tbh af chillwave flexitarian whatever cred VHS mumblecore viral. Hell of retro vegan chambray tacos VHS four dollar toast tote bag. Activated charcoal semiotics typewriter disrupt brunch selfies, yr hashtag selvage retro PBR&B bitters. Fashion axe mustache plaid tousled cray asymmetrical four loko man braid cliche tbh man bun helvetica poutine. Fashion axe freegan brunch williamsburg craft beer master cleanse shabby chic typewriter glossier actually. Plaid tumblr hexagon neutra slow-carb mumblecore. Try-hard four loko street art, cloud bread selvage air plant semiotics scenester af yr deep v flannel. Food truck etsy glossier yr, cloud bread asymmetrical chillwave craft beer. Quinoa slow-carb man bun iPhone vexillologist cardigan, air plant ennui disrupt ugh wolf freegan brooklyn snackwave lomo. Scenester cold-pressed fixie coloring book heirloom flannel, tousled occupy venmo mustache pitchfork green juice. VHS neutra 8-bit roof party. Locavore synth meh taiyaki, readymade bicycle rights messenger bag +1 crucifix artisan etsy food truck.
+{% highlight ruby %}
+from graphene import ObjectType, String, Schema
 
-### Pour-over blue bottle woke listicle
+class ShoppingQuery(ObjectType):
+    fruits = List()
+    supermarket = String()
 
-Pour-over blue bottle woke listicle, pitchfork 90's post-ironic scenester poutine ennui four loko ramps kickstarter. Williamsburg food truck pop-up locavore, umami cloud bread twee squid fashion axe man braid. Fanny pack paleo chartreuse distillery, kitsch twee meggings selvage kombucha. Keffiyeh actually prism listicle. Taxidermy authentic iPhone migas vegan copper mug. Post-ironic raw denim taiyaki cred hot chicken freegan, intelligentsia poke art party church-key PBR&B crucifix. Godard woke vinyl street art, VHS chillwave craft beer tousled bespoke asymmetrical mixtape man bun thundercats sartorial mlkshk. Meggings heirloom XOXO gentrify try-hard stumptown. Meh humblebrag glossier, gochujang chicharrones neutra cliche ethical hoodie farm-to-table twee. Messenger bag offal pug bespoke, put a bird on it tote bag literally.
+    def resolve_fruits(root, info): # resolver method for fruits
+        return f'Shopping list: {info.context.get('fruits')}'
 
-Everyday carry kinfolk shoreditch normcore try-hard etsy messenger bag venmo enamel pin. Try-hard fanny pack thundercats farm-to-table retro twee. Godard photo booth tofu 90's. Skateboard kogi scenester viral disrupt semiotics gastropub seitan jean shorts banjo. Humblebrag knausgaard waistcoat mixtape. Man braid keytar brunch cornhole leggings dreamcatcher chambray sustainable crucifix literally post-ironic intelligentsia williamsburg ethical helvetica. Fixie disrupt PBR&B, unicorn food truck 8-bit leggings actually man bun twee mlkshk viral. Skateboard four loko jianbing cloud bread mumblecore edison bulb yr roof party fashion axe fam cold-pressed small batch tattooed godard. Bushwick yuccie thundercats schlitz listicle skateboard quinoa. Gentrify hot chicken pop-up keytar master cleanse pork belly. Irony pitchfork la croix neutra freegan. Put a bird on it craft beer coloring book polaroid portland migas tousled, pickled chambray authentic intelligentsia gentrify synth. Letterpress tumblr wolf normcore selvage. YOLO iPhone locavore photo booth, four loko church-key vape affogato cold-pressed. Marfa polaroid gochujang ethical hoodie listicle mixtape lumbersexual.
+    def resolve_supermarket(root, info): # resolver method for supermarket
+        return f'My favourite supermarket is: {info.context.get('supermarket')}'
+
+schema = Schema(query=ShoppingQuery)
+result_fruits = schema.execute('{ fruits }', context={'fruits': ['apple', 'bananas', 'oranges']})
+assert result_fruits.data['fruits'] == ['apple', 'bananas', 'oranges']
+
+result_supermarket = schema.execute('{ supermarket }', context={'supermarket': 'Whole Foods'})
+assert result_supermarket.data['supermarket'] == 'Whole Foods'
+{% endhighlight %}
+
+The Query class has 2 parts: the field(s) and the resolver(s) function(s). In this example, the fields 'fruits' and 'supermarket' are described as List and, respectively, String. However, they can also be Int, Enum or Object. For more details refer to the [Graphene Types Reference][types-reference]. For each field, there is a resolver function which is responsible for fetching the data requested by the client's query. The resolver functions naming convention is the prefix 'resolver_' followed by the name of its corresponding field/ Once the schema is built, it can only execute the queries defined earlier which are fruits and supermarket. You might also wonder what the context argument is. In short, the context is an object shared by all the resolvers and it is used most of the times to provide access to a database. And that's all you needed to know for the first example!
+
+
+### Integrating Graphene with Flask
+
+[Flask][flask] is a web framework which provide developers with tools in order to build a web application. It is a light micro-framework with little to no dependencies to external libraries. For absolute beginners, I recommend this [excellent tutorial in Flask][flask-tutorial].
+
+To make things more interesting, in the example below I created a new schema which connects to a HR database. The SQL database contains details about employees and their departments. Check [the following example][flask-example] on how to create the database locally and for more reference on the code.
+
+{% highlight ruby %}
+app = Flask(__name__)
+app.debug = True
+
+app.add_url_rule(
+    '/graphql',
+    view_func=GraphQLView.as_view(
+        'graphql',
+        schema=schema,
+        graphiql=True # for having the GraphiQL interface
+    )
+)
+{% endhighlight %}
+
+Unlike a RESTful API, there is only a single endpoint from which GraphQL is exposed. The example below shows how GraphQL schema can be accessed under '/graphql. It also uses the GraphQLView interface for executing the queries easily via the browser directly instead of executing the queries via code as we've seen in the earlier example. The picture below queries for all employees within an organization. The results are displayed via the GraphiQL interface.
+
+![GrahpiQL Interface Flask and GraphQL]({{site.baseurl}}/assets/img/flask-graphql.png)
+
+### Integrating Graphene with Tornado
+
+[Tornado][tornado] is a web framework and asynchronous networking library. It is mostly used for applications which require a long-lived connection to each user, hence making it ideal for WebSockets. 
+
+There are 2 key differences between Tornado and Flask:
+1) Tornado is not using WSGI
+
+>A mediator is required for carrying out the interaction between the web servers and the Python application. So, the standard for carrying out communication between the web server and Python application is [WSGI][wsgi] (Web Server Gateway Interface). [...] the WSGI server is responsible for handling the requests from the web server and takes decision for carrying out the communication of those requests to an application framework’s process. Here, we can divide the responsibilities among the servers for scaling web traffic.
+
+2) Tornado is integrated with the standard Python library asyncio module and shares the same event loop.
+
+>[asyncio][asyncio] is a library to write concurrent code using the async/await syntax.
+
+In this example, I used the extra library [Graphene-Tornado][graphene-tornado] which offers support with integrating the GraphQL schema with the Tornado Handlers. The query has the field planets and the resolver resolve_planets and once executed, it will make an async request to the [Star Wars API][star-wars] which will return all the planets. The full code can be found at [the graphql-example github repository][graphql-example].
+
+{% highlight ruby %}
+class QueryPlanet(graphene.ObjectType):
+    planets = graphene.Field(Planets)
+
+    async def resolve_planets(self, info):
+        http_client = AsyncHTTPClient()
+        response = await http_client.fetch('https://swapi.dev/api/planets')
+        print('Info: ', info)
+        pprint(json.loads(response.body))
+        planets = json.loads(response.body)
+        return Planets(count=planets.get('count'),
+                       next=planets.get('next'),
+                       previous=planets.get('previous'),
+                       results=planets.get('results'))
+{% endhighlight %}
+
+The picture below executes the query and displays all the planets available from the API.
+
+![GrahpiQL Interface Tornado and GraphQL]({{site.baseurl}}/assets/img/tornado-graphql.png)
+
+[graphene-python]: https://graphene-python.org/
+[types-reference]: https://docs.graphene-python.org/en/latest/types/#typesreference 
+[flask]: https://flask.palletsprojects.com/en/2.0.x/
+[flask-tutorial]: https://www.mygreatlearning.com/blog/everything-you-need-to-know-about-flask-for-beginners/
+[flask-example]: https://docs.graphene-python.org/projects/sqlalchemy/en/latest/tutorial/.
+[tornado]: https://www.tornadoweb.org/en/stable/
+[wsgi]: https://medium.com/analytics-vidhya/what-is-wsgi-web-server-gateway-interface-ed2d290449e
+[asyncio]: https://docs.python.org/3/library/asyncio.html
+[star-wars]: https://swapi.dev/
+[graphene-tornado]: https://github.com/graphql-python/graphene-tornado
+[graphql-example]: https://github.com/andreeaionescu/graphql-example/tree/main/tornado_graphql_api

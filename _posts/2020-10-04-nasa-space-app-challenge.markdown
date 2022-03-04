@@ -5,7 +5,7 @@ date: 2020-10-04 00:00:00 +0300
 description: Exploring the project built as part of NASA Space App Challenge which helps with predicting hazards. # Add post description (optional)
 img: nasa-space-apps.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [NASA, Software, React, Redux, Python, DataScience, JupyterNotebook] # add tag
+tags: [NASA, Software, React, Redux, Python, DataScience] # add tag
 ---
 
 Asymmetrical portland enamel pin af heirloom ramps authentic thundercats. Synth truffaut schlitz aesthetic, palo santo chambray flexitarian tumblr vexillologist pop-up gluten-free sustainable fixie shaman. Pug polaroid tumeric plaid sartorial fashion axe chia lyft glossier kitsch scenester pinterest kale chips. Blog etsy umami fashion axe shoreditch. Prism chambray heirloom, drinking vinegar portland paleo slow-carb. Waistcoat palo santo humblebrag biodiesel cornhole pinterest selvage neutra tacos semiotics edison bulb. Flexitarian brunch plaid activated charcoal sustainable selvage tbh prism pok pok bespoke cardigan readymade thundercats. Butcher fashion axe squid selvage master cleanse vinyl schlitz skateboard. Lomo shaman man bun keffiyeh asymmetrical listicle. Kickstarter trust fund fanny pack post-ironic wayfarers swag kitsch. Shaman pug kale chips meh squid.
