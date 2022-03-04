@@ -4,7 +4,7 @@ title: GraphQL for Backend using Python
 date: 2021-11-03 00:00:00 +0300
 description: Exploring the integration of GraphQL/Graphene on the backend as well as showing two working examples with Tornado and Flask. # Add post description (optional)
 img: graphql-with-pyton.jpg # Add image post (optional)
-tags: [Python, Software] # add tag
+tags: [Python, GraphQL, Tornado, Flask, Software] # add tag
 ---
 
 GraphQL has been gaining a lot of popularity in recent years. This API Technology represents a query language which exposes the data available on the backend in a very intuitive way, enabling developers to make requests to a single endpoint. It can be used in any context where an API is required. It can be implemented in any programming language that can be used to build a web server. I decided to keep it simple and provide two basic examples on Python's most popular web servers: Flask and Tornado. Both examples make use of Graphene-Python.
