@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GraphQL for Backend using Python (Intermediate Level)
+title: GraphQL for Backend using Python
 date: 2021-11-03 00:00:00 +0300
 description: Exploring the integration of GraphQL/Graphene on the backend as well as showing two working examples with Tornado and Flask. # Add post description (optional)
 img: graphql-with-pyton.jpg # Add image post (optional)
@@ -74,7 +74,7 @@ There are 2 key differences between Tornado and Flask:
 
 >[asyncio][asyncio] is a library to write concurrent code using the async/await syntax.
 
-In this example, I used the extra library [Graphene-Tornado][graphene-tornado] which offers support with integrating the GraphQL schema with the Tornado Handlers. The query has the field planets and the resolver resolve_planets and once executed, it will make an async request to the [Star Wars API][star-wars] which will return all the planets. The full code can be found at [the graphql-example github repository][graphql-example].
+In this example, I used the extra library [Graphene-Tornado][graphene-tornado] which offers support with integrating the GraphQL schema with the Tornado Handlers. The query has the field planets and the resolver resolve_planets and once executed, it will make an async request to the [Star Wars API][star-wars] which will return all the planets.
 
 {% highlight ruby %}
 class QueryPlanet(graphene.ObjectType):
@@ -95,6 +95,12 @@ class QueryPlanet(graphene.ObjectType):
 The picture below executes the query and displays all the planets available from the API.
 
 ![GrahpiQL Interface Tornado and GraphQL]({{site.baseurl}}/assets/img/tornado-graphql.png)
+
+In conclusion, this API technology called GrahpQL can be used with any web servers in Python. You can even have a web server with multiple endpoints where some expose RESTful APIs and some GraphQL APIs. This comes especially handy for larger applications which can be easily adapted to send requests to both RESTful APIs and GraphQL APIs endpoints.
+
+### Github Repo
+
+The full code for the examples above can be found at the [graphql-example github repository][graphql-example]
 
 [graphene-python]: https://graphene-python.org/
 [types-reference]: https://docs.graphene-python.org/en/latest/types/#typesreference 
