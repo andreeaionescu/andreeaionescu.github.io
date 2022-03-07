@@ -5,24 +5,52 @@ date: 2020-10-04 00:00:00 +0300
 description: Exploring the project built as part of NASA Space App Challenge which helps with predicting hazards. # Add post description (optional)
 img: nasa-space-apps.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [NASA, Software, React, Redux, Python, DataScience] # add tag
+tags: [NASA, Software, React, Redux, Python, NumPy, Pandas, Flask, MachineLearning] # add tag
 ---
 
-Asymmetrical portland enamel pin af heirloom ramps authentic thundercats. Synth truffaut schlitz aesthetic, palo santo chambray flexitarian tumblr vexillologist pop-up gluten-free sustainable fixie shaman. Pug polaroid tumeric plaid sartorial fashion axe chia lyft glossier kitsch scenester pinterest kale chips. Blog etsy umami fashion axe shoreditch. Prism chambray heirloom, drinking vinegar portland paleo slow-carb. Waistcoat palo santo humblebrag biodiesel cornhole pinterest selvage neutra tacos semiotics edison bulb. Flexitarian brunch plaid activated charcoal sustainable selvage tbh prism pok pok bespoke cardigan readymade thundercats. Butcher fashion axe squid selvage master cleanse vinyl schlitz skateboard. Lomo shaman man bun keffiyeh asymmetrical listicle. Kickstarter trust fund fanny pack post-ironic wayfarers swag kitsch. Shaman pug kale chips meh squid.
+[NASA Space Apps London Hackathon][nasa-space-apps] took place virtually on the 2 - 4th of October weekend. Over 22 teams participated and this year's theme was "Take Action" - a reminder that despite of the pandemic, people can still make a difference even from the comfort and safety of their homes. The space agency partners who provided the datasets as well as volunteers as subject-matters expert were: CSA, CNES, JAXA, ESA and, of course, NASA. 
 
-###  Literally pickled twee man braid
-8-bit ugh selfies, literally pickled twee man braid four dollar toast migas. Slow-carb mustache meggings pok pok. Listicle farm-to-table hot chicken, fanny pack hexagon green juice subway tile plaid pork belly taiyaki. Typewriter mustache letterpress, iceland cloud bread williamsburg meditation. Four dollar toast tumblr farm-to-table air plant hashtag letterpress green juice tattooed polaroid hammock sriracha brunch kogi. Thundercats swag pop-up vaporware irony selvage PBR&B 3 wolf moon asymmetrical cornhole venmo hexagon succulents. Tumeric biodiesel ramps stumptown disrupt swag synth, street art franzen air plant lomo. Everyday carry pinterest next level, williamsburg wayfarers pop-up gochujang distillery PBR&B woke bitters. Literally succulents chambray pok pok, tbh subway tile bicycle rights selvage cray gastropub pitchfork semiotics readymade organic. Vape flexitarian tumblr raclette organic direct trade. Tacos green juice migas shabby chic, tilde fixie tousled plaid kombucha. +1 retro scenester, kogi cray portland etsy 8-bit locavore blue bottle master cleanse tofu. PBR&B adaptogen chartreuse knausgaard palo santo intelligentsia.
+###  Automated Detection of Hazards - Our Team's Challenge
+Countless phenomena such as floods, fires, and algae blooms routinely impact ecosystems, economies, and human safety. Our challenge was to use satellite data to create a machine learning model that detects a specific phenomenon. On top of this, we built an interface that, not only displays the detected phenomenon, but also layers it alongside ancillary data to help researchers and decision-makers better understand its impacts and scope.
 
-![Macbook]({{site.baseurl}}/assets/img/mac.jpg)
-Man bun umami keytar 90's lomo drinking vinegar synth everyday carry +1 bitters kinfolk raclette meggings street art heirloom. Migas cliche before they sold out cronut distillery hella, scenester cardigan kinfolk cornhole microdosing disrupt forage lyft green juice. Tofu deep v food truck live-edge edison bulb vice. Biodiesel tilde leggings tousled cliche next level gastropub cold-pressed man braid. Lyft humblebrag squid viral, vegan chicharrones vice kinfolk. Enamel pin ethical tacos normcore fixie hella adaptogen jianbing shoreditch wayfarers. Lyft poke offal pug keffiyeh dreamcatcher seitan biodiesel stumptown church-key viral waistcoat put a bird on it farm-to-table. Meggings pitchfork master cleanse pickled venmo. Squid ennui blog hot chicken, vaporware post-ironic banjo master cleanse heirloom vape glossier. Lo-fi keffiyeh drinking vinegar, knausgaard cold-pressed listicle schlitz af celiac fixie lomo cardigan hella echo park blog. Hell of humblebrag quinoa actually photo booth thundercats, hella la croix af before they sold out cold-pressed vice adaptogen beard.
+One of the reasons why we chose this theme is that natural disasters, are becoming more frequent due to climate change and hence, a greater number of people's lives are being disrupted every year. For example, the [Australian Wildfires][australian-wildfires] burned almost 12 million acres, destroying almost 2000 homes and killing 480 million animals in 2020. Therefore, predicting with an accuracy of at least 80% would help with detecting the hazards from an early stage. 
 
-### Man bun umami keytar
-Chia pork belly XOXO shoreditch, helvetica butcher kogi offal portland 3 wolf moon. Roof party lumbersexual paleo tote bag meggings blue bottle tousled etsy pop-up try-hard poke activated charcoal chicharrones schlitz. Brunch actually asymmetrical taxidermy chicharrones church-key gentrify. Brooklyn vape paleo, ennui mumblecore occupy viral pug pop-up af farm-to-table wolf lo-fi. Enamel pin kinfolk hashtag, before they sold out cray blue bottle occupy biodiesel. Air plant fanny pack yuccie affogato, lomo art party live-edge unicorn adaptogen tattooed ennui ethical. Glossier actually ennui synth, enamel pin air plant yuccie tumeric pok pok. Ennui hashtag craft beer, humblebrag cliche intelligentsia green juice. Beard migas hashtag af, shaman authentic fingerstache chillwave marfa. Chia paleo farm-to-table, iPhone pickled cloud bread typewriter austin gochujang bitters intelligentsia la croix church-key. Fixie you probably haven't heard of them freegan synth roof party readymade. Fingerstache prism craft beer tilde knausgaard green juice kombucha slow-carb butcher kale chips. Snackwave organic tbh ennui XOXO. Hell of woke blue bottle, tofu roof party food truck pok pok thundercats. Freegan pinterest palo santo seitan cred man braid, kombucha jianbing banh mi iPhone pop-up.
+### How We Addressed This Challenge
 
->Humblebrag pickled austin vice cold-pressed man bun celiac cronut polaroid squid keytar 90's jianbing narwhal viral. Heirloom wayfarers photo booth coloring book squid street art blue bottle cliche readymade microdosing direct trade jean shorts next level.
+In order to automatically detect hazard, we built a Machine Learning model using open source NASA satellite images dataset that predicts Transversal Cirrus Bands on an interactive world-map. The application consists of 3 main services: ui-service, hazard-prediction-service and hazard-analytics-service.
 
-Selvage messenger bag meh godard. Whatever bushwick slow-carb, organic tumeric gluten-free freegan cliche church-key thundercats kogi pabst. Hammock deep v everyday carry intelligentsia hell of helvetica. Occupy affogato pop-up bicycle rights paleo. Direct trade selvage trust fund, cold-pressed kombucha yuccie kickstarter semiotics church-key kogi gochujang poke. Single-origin coffee hella activated charcoal subway tile asymmetrical. Adaptogen normcore wayfarers pickled lomo. Ethical edison bulb shaman wayfarers cold-pressed woke. Helvetica selfies blue bottle deep v. Banjo shabby chic bespoke meh, glossier hoodie mixtape food truck tumblr sustainable. Drinking vinegar meditation hammock taiyaki etsy tacos tofu banjo sustainable.
+![NASA Hazard Detection Webpage]({{site.baseurl}}/assets/img/nasa-solution.png)
 
-Farm-to-table bespoke edison bulb, vinyl hell of cred taiyaki squid biodiesel la croix leggings drinking vinegar hot chicken live-edge. Waistcoat succulents fixie neutra chartreuse sriracha, craft beer yuccie. Ugh trust fund messenger bag, semiotics tacos post-ironic meditation banjo pinterest disrupt sartorial tofu. Meh health goth art party retro skateboard, pug vaporware shaman. Meh whatever microdosing cornhole. Hella salvia pinterest four loko shabby chic yr. Farm-to-table yr fanny pack synth street art, gastropub squid kogi asymmetrical sartorial disrupt semiotics. Kombucha copper mug vice sriracha +1. Tacos hashtag PBR&B taiyaki franzen cornhole. Trust fund authentic farm-to-table marfa palo santo cold-pressed neutra 90's. VHS artisan drinking vinegar readymade yr. Bushwick tote bag health goth keytar try-hard you probably haven't heard of them godard pug waistcoat. Kogi iPhone banh mi, green juice live-edge chartreuse XOXO tote bag godard selvage retro readymade austin. Leggings ramps tacos iceland raw denim semiotics woke hell of lomo. Brooklyn woke adaptogen normcore pitchfork skateboard.
+### Interactive UI showing the map
 
-Intelligentsia mixtape gastropub, mlkshk deep v plaid flexitarian vice. Succulents keytar craft beer shabby chic. Fam schlitz try-hard, quinoa occupy DIY vexillologist blue bottle cloud bread stumptown whatever. Sustainable cloud bread beard fanny pack vexillologist health goth. Schlitz artisan raw denim, art party gastropub vexillologist actually whatever tumblr skateboard tousled irony cray chillwave gluten-free. Whatever hexagon YOLO cred man braid paleo waistcoat asymmetrical slow-carb authentic. Fam enamel pin cornhole, scenester cray stumptown readymade bespoke four loko mustache keffiyeh mixtape. Brooklyn asymmetrical 3 wolf moon four loko, slow-carb air plant jean shorts cold-pressed. Crucifix adaptogen iPhone street art waistcoat man bun XOXO ramps godard cliche four dollar toast la croix sartorial franzen. Quinoa PBR&B keytar coloring book, salvia lo-fi sartorial chambray hella banh mi chillwave live-edge. Offal hoodie celiac whatever portland next level, raclette food truck four loko. Craft beer kale chips banjo humblebrag brunch ugh. Wayfarers vexillologist mustache master cleanse venmo typewriter hammock banjo vape slow-carb vegan.
+Interactive Web interface build with React and Redux, HTML5 and CSS3. It consists of 3 main sections (Menu section, Map sections, Analytics Section). Interactive map using Google Maps API and the satellite view. See picture above.
+
+### Hazard Prediction Service
+
+The role of this service is to call the MODIS API to retrieve the satellite data in real time from the location selected by the user. After receiving the images, it runs the Machine Learning model against the data and calculates the probability that the location selected is an Transverse Cirrus Band which what hurricane or thunderstorms look like from the above. 
+
+Transverse Cirrus Bands are bands of clouds oriented perpendicular to the atmospheric flow in which they are embedded. TCBs are often an indicator of strong turbulence and often associated with severe weather such as hurricanes and thunderstorms or atmospheric jets. The sateliatte images look like the following:
+
+![NASA MODIS API Images]({{site.baseurl}}/assets/img/nasa-modis.png)
+
+The ML model was built using JupyterNotebooks and uses Random Forests to make the predictions and categorise satellite images as isHurricane or isNotHurricane.
+
+### Hazard Analytics Service
+
+Exposes different kind of statistics and events about hazards around the globe. This service reuses existing Kaggle open datasets for wildfires in Brazil, Australia, California and mines insightful analytics which are further displayed in the web application. The analytics consist of correlation matrixes, barcharts as well as graphs to better showcase the data relations in order to help people understanding more about the impacts. Technology stack: Python, Pandas, Matplot, Numpy, Flask.
+
+### Architecture
+
+![NASA Full Solution Architecture]({{site.baseurl}}/assets/img/nasa-architecture.png)
+
+
+### Github Repos
+[Skyfolks Interactive UI][front-end]
+[Skyfolks Hazard Prediction Service][skyfolks-hazard-prediction-service]
+[Skyfolks Hazard Analytics Service][analytics-service]
+
+[nasa-space-apps]: https://2020.spaceappschallenge.org/locations/london/
+[australian-wildfires]: https://www.weforum.org/agenda/2020/01/australia-bushfires-size-impact-wildlife-emissions/
+[skyfolks-hazard-prediction-service]: https://github.com/andreeaionescu/skyfolks-hazard-prediction-service
+[front-end]: https://github.com/andreeaionescu/skyfolks-frontend
+[analytics-service]: https://github.com/airineivlad/skyfolks-backend
