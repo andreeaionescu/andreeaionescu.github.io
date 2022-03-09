@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hazard Prediction - Full Stack Solution Using React And Data Science
+title: Hazard Prediction - Full Stack Machine Learning Solution
 date: 2020-10-04 00:00:00 +0300
 description: Hazard Prediction Project built as part of NASA Space App Challenge. # Add post description (optional)
 img: nasa-space-apps.jpg # Add image post (optional)
