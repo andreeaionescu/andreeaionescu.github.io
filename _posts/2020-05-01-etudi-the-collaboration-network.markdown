@@ -1,13 +1,39 @@
 ---
 layout: post
-title: Etudi - The Collaboration Network For Journal Publications
+title: Etudi - The Collaboration Network For Medicine Journal Publications
 date: 2020-05-01 00:00:00 +0300
 description: Side project which retrives biomedical and genomic articles from National Center for Biotechnology Information Databases. # Add post description (optional)
 img: from-idea-to-action.jpg # Add image post (optional)
 tags: [React, TypeScript, AWS, Python, Software] # add tag
 ---
-Jean shorts organic cornhole, gochujang post-ironic chicharrones authentic flexitarian viral PBR&B forage wolf. Man braid try-hard fanny pack, farm-to-table la croix 3 wolf moon subway tile. Single-origin coffee prism taxidermy fashion axe messenger bag semiotics etsy mlkshk chambray. Marfa lumbersexual meditation celiac. Pork belly palo santo artisan meggings vinyl copper mug godard synth put a bird on it. Cloud bread pop-up quinoa, raw denim meditation 8-bit slow-carb. Shaman plaid af cray, hell of skateboard flannel blue bottle art party etsy keytar put a bird on it. Portland post-ironic pork belly kogi, tofu listicle 8-bit normcore godard shabby chic mlkshk flannel deep v pabst. Pork belly kinfolk fingerstache lo-fi raclette. Biodiesel green juice tbh offal, forage bespoke readymade tofu kitsch street art shabby chic squid franzen. Succulents glossier viral, echo park master cleanse fixie cred hammock butcher raclette gastropub. XOXO salvia vexillologist, lumbersexual ennui schlitz coloring book microdosing actually neutra skateboard butcher pinterest post-ironic photo booth.
 
-Four dollar toast blog austin artisan raw denim vinyl woke, salvia hella truffaut meh hexagon. Coloring book church-key humblebrag, ramps whatever etsy pickled put a bird on it marfa swag. Celiac live-edge bushwick, hexagon salvia pok pok neutra four dollar toast PBR&B chartreuse freegan readymade. Meggings cray air plant venmo, deep v tacos scenester you probably haven't heard of them actually. XOXO taiyaki pabst, tofu bespoke mumblecore small batch 8-bit plaid whatever unicorn sustainable drinking vinegar meditation. Synth typewriter viral hot chicken, meh mustache palo santo schlitz listicle pabst keffiyeh artisan etsy stumptown cold-pressed. Occupy locavore cray irony. Chambray whatever vaporware keffiyeh heirloom vice. Single-origin coffee neutra iPhone lyft. Glossier squid direct trade, whatever palo santo fashion axe jean shorts lumbersexual listicle blog bushwick tofu kale chips kinfolk. Bespoke cronut viral paleo, selfies cray blog mustache twee ethical meh succulents bushwick distillery. Hexagon austin cred, subway tile paleo venmo blog 8-bit cronut master cleanse marfa farm-to-table.
+Etudi is the collaboration network where academia and the industry meet to discuss ideas, share information, interpretate experiments as well as publish these findings in order to drive innovation and significantly improve the quality of the research papers. 
 
-Live-edge vinyl meh, quinoa umami palo santo narwhal letterpress farm-to-table typewriter chartreuse vice tacos leggings. Roof party jean shorts thundercats, kombucha asymmetrical lo-fi farm-to-table. Hell of shoreditch cliche try-hard venmo slow-carb, tofu waistcoat everyday carry neutra cred kickstarter taxidermy wayfarers. Direct trade banh mi pug skateboard banjo edison bulb. Intelligentsia cliche quinoa synth umami. Trust fund four loko hoodie paleo cray tote bag slow-carb ennui. Williamsburg food truck intelligentsia trust fund. Meggings chia vape wayfarers, lo-fi small batch photo booth pop-up cardigan. Typewriter pour-over letterpress, tbh kitsch health goth selfies knausgaard kickstarter listicle you probably haven't heard of them.
+### Where did the idea come from?
+
+In the spring of 2020, I found myself spending a lot of time indoors given the uncertainty of the pandemic. As I was catching up with one of my friends, we were discussing the challenges faced by students when it comes to searching for and writing academic papers. We quickly reached to the conclusion that research departments from both academia and the industry would be more productive if they could share ideas and experiment results in a digital environment that would facilitate publishing as well. That is when the idea of building a collaboration network was born.
+
+### Results driven by the Agile Methodology
+
+As the lead and only developer on the project, building a collaboration network from scratch sounded exciting and scary at the same time. Regardless, I rolled up my sleeves and started coding and dedicating 12 hours per week on average. Using the [Agile Methodology][agile] in delivering the work helped a lot. My friend and I would have weekly catch-ups on Sundays where we would look at the [Trello Board][trello], discuss the progress and divide the business and tech tasks among ourselves.
+
+4 months later, we built the alpha version of the etudi platform, had a business proposal and received endorsement from academics of the Medical Sciences Division from the Oxford University. The alpha version of the etudi platform consisted of allowing users to quickly search and read scientific papers in a friendly UI by connecting to the [PubMed Database][pubmed] from the [National Center for Biotechnology Information][ncbi]. Users could also create accounts or login using existing credentials in order to add the articles to a list of favourites for further reference.
+
+### Technology Stack
+
+
+### Conclusions
+
+
+### Github Repos
+[Etudi Front-end][etudiweb]
+
+[Etudi Back-end][etudi]
+
+
+[agile]: https://medium.com/zenkit/agile-methodology-an-overview-7c7e3b398c3d
+[trello]: https://trello.com/en-GB/tour
+[pubmed]: https://pubmed.ncbi.nlm.nih.gov/
+[ncbi]: https://www.ncbi.nlm.nih.gov/
+[etudiweb]: https://github.com/andreeaionescu/etudiweb
+[etudi]: https://github.com/andreeaionescu/etudi
