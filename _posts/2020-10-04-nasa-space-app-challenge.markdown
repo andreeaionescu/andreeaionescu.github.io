@@ -5,7 +5,7 @@ date: 2020-10-04 00:00:00 +0300
 description: Hazard Prediction Project built as part of NASA Space App Challenge. # Add post description (optional)
 img: nasa-space-apps.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [NASA, Software, React, Redux, Python, NumPy, Pandas, Flask, JupyerNotebooks, MachineLearning] # add tag
+tags: [NASA, Software, React, Redux, Python, NumPy, Pandas, Flask, MachineLearning] # add tag
 ---
 
 [NASA Space Apps London Hackathon][nasa-space-apps] took place virtually on the 2nd - 4th of October weekend. Over 22 teams participated and this year's theme was "Take Action" - a reminder that, despite of the pandemic, people can still make a difference even from the comfort and safety of their homes. The space agency partners who provided the datasets were: CSA, CNES, JAXA, ESA and, of course, NASA. 

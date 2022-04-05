@@ -96,6 +96,8 @@ The picture below executes the query and displays all the planets available from
 
 ![GrahpiQL Interface Tornado and GraphQL]({{site.baseurl}}/assets/img/tornado-graphql.png)
 
+### Conclusion
+
 In conclusion, this API technology called GrahpQL can be used with any web servers in Python. You can even have a web server with multiple endpoints where some expose RESTful APIs and some GraphQL APIs. This comes especially handy for larger applications which can be easily adapted to send requests to both RESTful APIs and GraphQL APIs endpoints.
 
 ### Github Repo
