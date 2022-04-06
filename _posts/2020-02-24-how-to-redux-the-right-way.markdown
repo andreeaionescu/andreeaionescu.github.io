@@ -67,7 +67,7 @@ export default books
 
 Redux is very often used with [React][react] (a JavaScript library created by Facebook in 2013). React lets you compose complex UIs from small and isolated pieces of code called “components”. The parent component is responsible for their children’s data needs. Hence, the state is passed down to the children by using props in order to keep the children in sync with each other and the parent. However, React has its limitations. It does do well at state transferring between the components as there is only a one-way data flow. Most of the times unnecessary data ends up being transferred to the components. 
 
-![Redux State Flow]({{site.baseurl}}/assets/img/redux-state-flow.png)
+![Redux State Flow]({{site.baseurl}}/assets/img/redux-state-flow.PNG)
 
 In this situation, Redux saves the day as it solves the state transfer problem. In this way, each component can directly access the store. Since the store is the single source of truth, the code becomes much readable and easier to understand as does the access and transfer of the state between the components.
 
@@ -77,7 +77,7 @@ In the Model View Controller Pattern, the constant updates between models and vi
 
 Another source of inspiration for Redux was the [Flux Pattern][flux] for building UIs. 
 
-![Flux]({{site.baseurl}}/assets/img/flux.png)
+![Flux]({{site.baseurl}}/assets/img/flux.PNG)
 
 Both of the problems mentioned previously could be solved by Redux's unidirectional data flow. In the example below, a user performs the action of depositing $10, hence an action is "dispatched". Then the reducer function is called with the current state and the dispatched action as parameters, immutably updates the state by returning a new state object. The store notifies subscribers of the update by running their callback functions. Finally, subscribers (components) can retrieve the updated state and re-render.
 
