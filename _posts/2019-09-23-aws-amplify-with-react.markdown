@@ -55,11 +55,11 @@ signUp = async () => {
 ### Conclusion
 
 Authentication is just an example of the multiple tools provided by AWS Amplify. Other examples of features are: 
-- Datastore (store engine that syncs up all data between mobile/web apps using AWS AppSync)
-- Analytics (helps with tracking user interactions and sessions, web page metrics as well as get real-time stream data to better analyze customer insights using Amazon Pinpoint and Amazon Kinesis)
-- API (for HTTP requests to GraphQL/REST endpoints to access, manipulate data from Amazon DynamoDB or Amazon Aurora Serverless)
-- Functions (allows adding a Lambda function to the project alongside a REST API or as a datasource in a GraphQL API)
-- PubSub (for passing messages between app instances and app's backend by creating real-time interactive experiences; it also provides connectivity with cloud-based message-oriented middlewares)
+* Datastore (store engine that syncs up all data between mobile/web apps using AWS AppSync)
+* Analytics (helps with tracking user interactions and sessions, web page metrics as well as get real-time stream data to better analyze customer insights using Amazon Pinpoint and Amazon Kinesis)
+* API (for HTTP requests to GraphQL/REST endpoints to access, manipulate data from Amazon DynamoDB or Amazon Aurora Serverless)
+* Functions (allows adding a Lambda function to the project alongside a REST API or as a datasource in a GraphQL API)
+* PubSub (for passing messages between app instances and app's backend by creating real-time interactive experiences; it also provides connectivity with cloud-based message-oriented middlewares)
 
 I highly recommend [this introductory tutorial][tutorial] that has step-by-step instructions on how to build your first React application. 
 
