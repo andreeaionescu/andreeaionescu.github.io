@@ -884,7 +884,7 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 100%;
   position: relative;
 }
 
@@ -920,19 +920,19 @@ table tfoot td {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 285px;
+  width: 385px;
   height: 100%;
-  padding: 20px 10px;
+  padding: 23px 30px;
   background-color: #1e1e1f;
 }
 
@@ -1002,8 +1002,8 @@ table tfoot td {
 }
 
 .content-box {
-  padding: 20px;
-  padding-left: 330px;
+  padding: 43px;
+  padding-left: 23%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1020,6 +1020,10 @@ table tfoot td {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.contact{
+  margin-top: 15px;
 }
 
 .contact .contact-title {
@@ -1485,23 +1489,44 @@ a.newer-posts:hover {
 /* Skills */
 @keyframes load{
   from {
-      width: 0%
+      width: 0%;
+      content: ".";
+  }
+
+  to {
+    
+      content:  attr(data-skill);
   }
 }
 @-webkit-keyframes load{
   from {
-      width: 0%
+    width: 0%;
+    content: ".";
   }
+  to {
+    
+    content:  attr(data-skill);
+}
 }
 @-moz-keyframes load{
   from {
-      width: 0%
+    width: 0%;
+    content: ".";
   }
+  to {
+    
+    content:  attr(data-skill);
+}
 }
 @-o-keyframes load{
   from {
-      width: 0%
+    width: 0%;
+    content: ".";
   }
+  to {
+    
+    content:  attr(data-skill);
+}
 }
 
 .bar{
@@ -1520,10 +1545,10 @@ a.newer-posts:hover {
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
+  /* animation: load 4s 0s;
+  -webkit-animation: load 4s 0s;
+  -moz-animation: load 4s 0s;
+  -o-animation: load 4s 0s; */
 }
 
 .bar.front::before{
@@ -1547,4 +1572,11 @@ a.newer-posts:hover {
 }
 .bar.expert::before{
   width: calc(100% - 10px);
+}
+
+
+@media screen and (max-width: 770px) {
+  #skills {
+    display: none;
+  }
 }
